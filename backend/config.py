@@ -1,0 +1,4 @@
+DB_URL = "postgresql://postgres:[YOUR-PASSWORD]@db.wvattyjoisrgyrxpchkp.supabase.co:5432/postgres"
+SECRET_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind2YXR0eWpvaXNyZ3lyeHBjaGtwIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0MjE4NDY4MiwiZXhwIjoyMDU3NzYwNjgyfQ.CdxDo43AQBmygF2r7Fq497JtdBAAzxwINuUqxVk8ezQ"  # For JWT Authentication
+SUPABASE_URL = "https://wvattyjoisrgyrxpchkp.supabase.co"
+SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind2YXR0eWpvaXNyZ3lyeHBjaGtwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDIxODQ2ODIsImV4cCI6MjA1Nzc2MDY4Mn0.aWXzjyDjtHipzsraG84d79Le7dPrQ9QEwZY2Ua9eqa4"
