@@ -1,0 +1,98 @@
+/* Global Styles */
+body {
+    font-family: Helvetica, sans-serif;
+    background: linear-gradient(90deg, #4FACFE, #00F2FE);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 80%;
+    max-width: 900px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Left Side - Form */
+.input {
+    width: 50%;
+    padding: 40px;
+    text-align: center;
+    background: white;
+}
+
+.input h1 {
+    color: #1A1A2E;
+    margin-bottom: 20px;
+}
+
+.input input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Buttons */
+.input button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #4FACFE, #00F2FE);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#openCamera {
+    background: white;
+    color: #4FACFE;
+    border: 1px solid #4FACFE;
+}
+
+#openCamera:hover {
+    background: #4FACFE;
+    color: white;
+}
+
+/* Camera & Captured Image */
+#cameraContainer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+video, #capturedImage {
+    width: 90%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Right Side - Overview */
+.overview {
+    width: 50%;
+    padding: 40px;
+    text-align: center;
+    background: linear-gradient(90deg, #4FACFE, #00F2FE);
+    color: white;
+}
