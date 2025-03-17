@@ -1,103 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <div class="login-box">
-            <h2>Savvy<b>Save</b></h2>
-            <form>
-                <label>Username</label>
-                <input type="text" placeholder="Email or Phone" required>
-                <label>Password</label>
-                <input type="password" placeholder="Password" required>
-                <button type="submit">Log In</button>
-                <div class="social-login">
-                    <button class="google">Google</button>
-                    <button class="facebook">Facebook</button>
-                </div>
-            </form>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="input">
+                <h1>Login</h1>
+                <form action="">
+                    <input type="text" placeholder="Email or Phone">
+                    <button type="submit">Login</button>
+                    <p>Don't have an account? <a href="">Register</a></p>
+                </form>
+            </div>
+            <div class="overview">
+                <h1>SavvySave – Smart. Secure. Simplified</h1>
+                <p>Take control of your finances effortlessly with SavvySave – the ultimate AI-powered saving and expense tracking app. FaceID authentication ensures secure access, while intuitive insights help you spend smarter and save better. Your journey to financial freedom starts here!"</p>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
-
-<style>
-    html {
-        font-family: garamond;
-    }
-
-    body {
-        background-image: linear-gradient(90deg, #00ff2e,#00d4ff);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
-
-    .container {
-        position: relative;
-    }
-
-    .login-box {
-        background-color:  rgba(0, 0, 0, 0.4);
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.);
-        text-align: center;
-    }
-    
-    h2{
-        font-size:3rem;
-    }
-    
-    h2 b{
-        background-image: linear-gradient(90deg, #00ff2e,#00d4ff);
-        -webkit-background-clip: text; /* Clip the background to the text */
-        color: transparent;
-    }
-
-    input {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border: none;
-        border-radius: 5px;
-    }
-
-    button {
-        width: 100%;
-        padding: 10px;
-        background: white;
-        border: none;
-        cursor: pointer;
-        margin-top: 10px;
-    }
-
-    .social-login {
-        display: flex;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .google, .facebook {
-        width: 50%;
-        padding: 10px;
-        border: none;
-        cursor: pointer;
-    }
-    
-    .google {
-        background: gray;
-    }
-
-    .facebook {
-        background: orange;
-    }
-</style>
