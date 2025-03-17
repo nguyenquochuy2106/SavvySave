@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login Page</title>
-        <link rel="stylesheet" href="css/login.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="input">
-                <h1>Login</h1>
-                <form action="">
-                    <input type="text" placeholder="Email or Phone">
-                    <button type="submit">Login</button>
-                    <p>Don't have an account? <a href="">Register</a></p>
-                </form>
-            </div>
-            <div class="overview">
-                <h1>SavvySave – Smart. Secure. Simplified</h1>
-                <p>Take control of your finances effortlessly with SavvySave – the ultimate AI-powered saving and expense tracking app. FaceID authentication ensures secure access, while intuitive insights help you spend smarter and save better. Your journey to financial freedom starts here!"</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div class="input">
+            <h1>Login</h1>
+            <form id="loginForm">
+                <input type="text" placeholder="Email or Phone">
+                <button type="button" id="loginBtn" >Login</button>
+                <p>Don't have an account? <a href="signup.html">Register</a></p>
+            </form>
+            <!-- Image Display -->
+            <div id="imageContainer" class="hidden">
+                <img id="loginImage" src="images/user_face.png" alt="Face Recognized">
             </div>
         </div>
-    </body>
+
+        <!-- App Overview -->
+        <div class="overview">
+            <h1>SavvySave – Smart. Secure. Simplified</h1>
+            <p>Take control of your finances effortlessly with SavvySave – the ultimate AI-powered saving and expense tracking app. FaceID authentication ensures secure access, while intuitive insights help you spend smarter and save better. Your journey to financial freedom starts here!</p>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
 </html>
