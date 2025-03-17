@@ -1,15 +1,21 @@
+-- Create users table
 CREATE TABLE users (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    name VARCHAR(100),
-    email VARCHAR(100) UNIQUE,
-    face_embedding BYTEA
+    name TEXT NOT NULL,
+    email TEXT UNIQUE NOT NULL,
+    avatar TEXT,
+    created_at TIMESTAMP DEFAULT NOW()
 );
 
+-- Create transactions table
 CREATE TABLE transactions (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    user_id UUID REFERENCES users(id),
-    amount FLOAT,
-    category VARCHAR(50),
+    id SERIAL PRIMARY KEY,
+    user UUID REFERENCES users(id) ON DELETE CASCADE,
+    amount NUMERIC NOT NULL,
+    category TEXT NOT NULL,
     description TEXT,
     created_at TIMESTAMP DEFAULT NOW()
 );
+
+-- Create index for faster lookups
+CREATE INDEX idx_transactions_user ON transactions(user);
